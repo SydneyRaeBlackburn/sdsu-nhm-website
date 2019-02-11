@@ -1,0 +1,436 @@
+/*
+ Blackburn, Sydney
+ CS545_00
+ Assignment #4
+ Fall 2018
+ 
+ CSS for SDSU Natural History Museum
+*/
+
+/* Defaults */
+
+body {
+    font-size: 14pt;
+    color: rgba(0,0,0,0.9);
+    font-weight: bold;
+    font-family: Arial, san-serif;
+    margin: 0px;
+    height: 100%;
+    background-color: #666666;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(102,102,102,1) 100%);
+}
+
+p {
+    font-size: 14pt;
+    margin: 15px;
+    color: #232323;
+}
+
+h1 {
+    font-size: 36pt;
+    font-style: italic;
+    font-weight: bold;
+    color: rgba(0,0,0,0.9);
+    font-family: Arial, san-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24pt;
+    font-style: italic;
+    font-weight: bold;
+    color: rgba(0,0,0,0.9);
+    font-family: Arial, san-serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 18pt;
+    color: rgba(0,0,0,0.9);
+    font-family: Arial, san-serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+header {
+    position: relative;
+}
+
+
+footer{
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+address {
+    float: left;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+nav {
+    clear: both;
+    padding: 5px;
+    margin-top: -20px;
+    border-top: 5px solid #a00000;
+    border-bottom: 5px solid #a00000;
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+    border-color: #a00000
+}
+
+div#container {
+    text-align: center;
+}
+
+article address {
+    font-size: 14pt;
+    color: #232323;
+}
+
+/* Navigation Styles */
+
+nav a.inactive, a.active, .dropbtn {
+    display: inline;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+nav a.active {
+    color: #a00000;
+}
+
+nav a:hover:not(.active) {
+    color: #a00000;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #dddddd;
+    min-width: 150px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header Styles */
+
+div .boxHeader {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+div .boxFooter {
+    float: left;
+    width: 33.3%;
+    overflow: hidden;
+}
+
+div .clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img#logo {
+    width: 300px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#slogan {
+    float: right;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+/* Footer Styles */
+
+footer p, address, form {
+    font-size: 10pt;
+    color: rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+p#name {
+    float: left;
+    padding-left: 55px;
+    padding-right: 100px;
+}
+
+div#newsletter {
+    float: right;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+/* Section and Article Styles*/
+
+.homePageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.homePageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.homePageArticleLinks {
+    margin: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.homeImgs {
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.aboutPageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.aboutPageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.aboutImgs {
+}
+
+.exhibitsPageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.exhibitsPageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.exhibitsImgs {
+    height: 200px;
+    width: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.eventsPageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.eventsPageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.eventsImgs {
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.memberPageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.memberPageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.memberImgs {
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.volunteerPageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.volunteerPageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.volunteerImgs {
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.donatePageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.donatePageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.donateImgs {
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contactPageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.contactPageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contactImgs {
+    padding-bottom: 50px;
+}
+
+/* New Styles for assignment 3 */
+
+.upcomingEventsSignupSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.upcomingEventsSignupArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.processPageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.processPageArticle {
+    margin: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+form {
+    align: left;
+}
+
+
+/* Form Styles */
+
+.required {
+    color: #C41230;
+    font-weight: bolder;
+    font-size: 18pt;
+}
+
+.error {
+    color: #C41230;
+}
+
+/* New for assignment 4 */
+
+div#container form p#total {
+    font-size: 14px;
+    color: rgba(0,0,0,0.9);
+}

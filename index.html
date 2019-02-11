@@ -1,0 +1,121 @@
+<!--
+ Blackburn, Sydney
+ CS545_00
+ Assignment #2
+ Fall 2018
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SDSU Natural History Museum</title>
+        <meta charset="utf-8" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <!-- logo and slogan -->
+            <div class="clearfix">
+                <div class="boxHeader">
+                    <a href="#">
+                        <img id="logo" src="images/logo.png" alt="SDSU Natural History Museum" />
+                    </a>
+                </div>
+                <div class="boxHeader">
+                    <h4 id="slogan">DISCOVER. EXPERIENCE. ENJOY.</h4>
+                </div>
+            </div>
+            <!-- navigation -->
+            <nav>
+                <a class="inactive" href="pages/about.html">ABOUT US</a>
+                <a class="inactive" href="pages/exhibits.html">EXHIBITS</a>
+                <a class="inactive" href="pages/events.html">EVENTS</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">MAKE A DIFFERENCE</a>
+                    <ul class="dropdown-content">
+                        <li><a class="inactive" href="pages/member.html">MEMBER</a></li>
+                        <li><a class="inactive" href="pages/volunteer.html">VOLUNTEER/INTERN</a></li>
+                        <li><a class="inactive" href="pages/donate.html">DONATE</a></li>
+                    </ul>
+                </div>
+                <a class="inactive" href="pages/contact.html">CONTACT</a>
+            </nav>
+        </header>
+        
+        <!-- main body -->
+        <!-- WARNINGS: ARTICLE/SECTION LACKS HEADING
+            Some of the content within the articles were just pictures so they didn't need headings. Other contents (paragraphs) within articles/sections didn't need headings because they were used to keep the layout -->
+        <div id="container">
+            <section class="homePageSection">
+                <article class="homePageArticle">
+                    <img src="images/homeImages/mission-bay-san-diego-ca-1408763.jpg" alt="Mission Bay" />
+                </article>
+                <article class="homePageArticle">
+                    <img src="images/homeImages/san-diego-skyline-1447704.jpg" alt="San Diego Skyline" />
+                </article>
+                <article class="homePageArticle">
+                        <img src="images/homeImages/my-san-diego-trip-4-1508667.jpg" alt="San diego" />
+                </article>
+            </section>
+            <section class="homePageSection">
+                <article class="homePageArticleLinks">
+                    <h3>Come see our exhibits!</h3>
+                    <a href="pages/exhibits.html">
+                        <img class="homeImgs" src="images/exhibitsImages/dinosaur-bones-1557671.jpg" alt="Dinosaur Bones" />
+                    </a>
+                </article>
+                <article class="homePageArticleLinks">
+                    <h3>Check out our events!</h3>
+                    <a href="pages/events.html">
+                        <img class="homeImgs" src="images/eventsImages/beetle-1381699.jpg" alt="Beetle" />
+                    </a>
+                </article>
+                <article class="homePageArticleLinks">
+                    <h3>Join us!</h3>
+                    <a href="pages/member.html">
+                        <img class="homeImgs" src="images/memberImages/smile-1433202.jpg" alt="Woman Smiling" />
+                    </a>
+                </article>
+            </section>
+        </div>
+        
+        <!-- footer -->
+        <footer>
+            <hr />
+            <div class="clearfix">
+                <div class="boxFooter">
+                    <address>
+                        San Diego State University <br />
+                        Natural History Museum <br />
+                        San Diego, CA 92182-0000 <br />
+                        (619) 594-5200 <br />
+                        <a href="mailto:nhmuseum@sdsu.edu" target="_top">nhmuseum@sdsu.edu</a> <br />
+                    </address>
+                </div>
+                <div class="boxFooter">
+                    <p id="name">
+                    Sydney Blackburn <br />
+                    CS 545 <br />
+                    Fall 2018 <br />
+                    <br /><br />
+                    <script type="text/javascript">
+                        document.write("Last Modified: " + document.lastModified);
+                    </script>
+                    </p>
+                </div>
+                <div class="boxFooter">
+                    <div id="newsletter">
+                    <p>Receive the latest information about our new exhibitions, programs, events, and more.</p>
+                    <form action="#">
+                        Email:
+                        <input type="text" name="firstname">
+                        <input type="submit" value="Submit">
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
