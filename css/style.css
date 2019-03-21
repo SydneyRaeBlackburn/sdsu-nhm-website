@@ -1,11 +1,11 @@
 /*
  Blackburn, Sydney
  CS545_00
- Assignment #4
+ Assignment #2
  Fall 2018
  
  CSS for SDSU Natural History Museum
-*/
+ */
 
 /* Defaults */
 
@@ -98,6 +98,14 @@ div#container {
 article address {
     font-size: 14pt;
     color: #232323;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 5px;
 }
 
 /* Navigation Styles */
@@ -382,7 +390,7 @@ div#newsletter {
 .upcomingEventsSignupSection {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-left: 150px;
     margin-right: 150px;
@@ -393,44 +401,21 @@ div#newsletter {
     border-radius: 8px;
     margin-bottom: 25px;
     text-align: center;
+    font-size: 18pt;
 }
 
-.processPageSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
+form#upcomingEventsForm {
+    text-align: left;
 }
-
-.processPageArticle {
-    margin: 20px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-form {
-    align: left;
-}
-
 
 /* Form Styles */
 
 .required {
     color: #C41230;
     font-weight: bolder;
-    font-size: 18pt;
+    font-size: 13pt;
 }
 
 .error {
     color: #C41230;
-}
-
-/* New for assignment 4 */
-
-div#container form p#total {
-    font-size: 14px;
-    color: rgba(0,0,0,0.9);
 }
